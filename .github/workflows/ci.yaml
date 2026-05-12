@@ -13,6 +13,6 @@ jobs:
       - name: run python script
         run: |
           pip install -r requirement.txt
-          python ci.py
+          python nci.py
 
           
