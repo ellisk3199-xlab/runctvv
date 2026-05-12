@@ -1,9 +1,11 @@
 name: GitHub Actions Demo
+
 on: [push]
+
 jobs:
   not-my-first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: hi there!
+      - name: hi there
         run: | 
-         echo# "hello world"
+          echo "hello world"
