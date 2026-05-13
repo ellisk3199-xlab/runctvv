@@ -7,4 +7,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: run python script
-        run: python ./runctvv/test_example/smoke.py
+        run: python ./smoke.py
