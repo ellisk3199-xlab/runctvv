@@ -2,9 +2,10 @@ name: "smoke test"
 on: [push]
 
 jobs:
-  not-my-first-job:
+  my-first-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
+      - name: run python script
+        run: |
           smoke.py test-example/
