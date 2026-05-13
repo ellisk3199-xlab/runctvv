@@ -1,4 +1,4 @@
-name: "Unit & Smoke Test"
+name: "smoke test"
 on:
   pull_request:
     paths:
@@ -13,6 +13,6 @@ defaults:
 jobs:
   test:
     runs-on: ubuntu-latest
-    steps:
-        - run: python smoke.py
-        
+    steps:      
+      - run: 
+          python ./test-example/smoke.py
