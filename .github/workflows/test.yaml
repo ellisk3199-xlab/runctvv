@@ -1,11 +1,5 @@
 name: "smoke test"
-on:
-  pull_request:
-    paths:
-      - test-example/**
-      
-  workflow_dispatch:
-
+on: [push]
 defaults:
   run:
     shell: bash -el {0}
@@ -13,6 +7,6 @@ defaults:
 jobs:
   test:
     runs-on: ubuntu-latest
-    steps:      
-      - run: 
-          smoke.py
+    steps:
+      - run: |
+         smoke.py test-example/
