@@ -1,6 +1,4 @@
-import nci.py
 import wandb
-#import unittest
 
 # the greeting string
 def get_greeting() -> str:
