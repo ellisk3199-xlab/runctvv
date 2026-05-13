@@ -1,4 +1,3 @@
-import wandb
 
 # the greeting string
 def get_greeting() -> str:
