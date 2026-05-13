@@ -11,10 +11,8 @@ defaults:
     shell: bash -el {0}
 
 jobs:
-  not-my-first-job:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: run python script
-        run: |
-          smoke.py test-example/
+        - run: python smoke.py
+        
