@@ -1,8 +1,5 @@
 name: "smoke test"
 on: [push]
-defaults:
-  run:
-    shell: bash -el {0}
 
 jobs:
   test:
