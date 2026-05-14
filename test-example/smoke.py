@@ -13,7 +13,7 @@ def add_numbers(a: int, b: int):
     
 class TestAddNumbers(unittest.TestCase):
     def test_add_numbers(self):
-        self.assertEqual(add_number(2, 3) == 5)
+        self.assertEqual(add_numbers(2, 3) == 5)
 
 # The test function using standard assert statements
 def test_add_numbers():
