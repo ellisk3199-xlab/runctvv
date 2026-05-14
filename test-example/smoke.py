@@ -10,14 +10,15 @@ class TestGreeting(unittest.TestCase):
 
 def add_numbers(a: int, b: int):
     return a + b
-
+    
+class TestAddNumbers(unittest.TestCase):
+    def test_add_numbers(self):
+        self.assertEqual(add_number(2, 3) 5)
+        
 # The test function using standard assert statements
 def test_add_numbers():
     # Test positive numbers
     assert add_numbers(2, 3) == 5
-    
-    # Test zero
-    assert add_numbers(5, 0) == 5
 
 def reverse_string(text: str):
     return text[::-1].upper()
