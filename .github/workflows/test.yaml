@@ -7,4 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: run python script
-        run: python ./test-example/smoke.py
+        env:
+          PYTHONPATH: ./test-example
+        run: python tests/smoke.py
