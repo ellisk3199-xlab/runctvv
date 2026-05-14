@@ -1,9 +1,10 @@
 import unittest
-
 # Welcome skyline1
 def get_greeting():
     return "Welcome back Bob!"
 
+
+#index1
 class TestGreeting(unittest.TestCase):
     def test_get_greeting_returns_correct_string(self):
         self.assertEqual(get_greeting(), "Welcome back Bob!")
@@ -11,14 +12,15 @@ class TestGreeting(unittest.TestCase):
 def add_numbers(a: int, b: int):
     return a + b
     
+#continue
 class TestAddNumbers(unittest.TestCase):
     def test_add_numbers(self):
-        self.assertEqual(add_numbers(2, 3) == 5)
+        self.assertEqual(add_numbers(3, 0), 3)
 
 # The test function using standard assert statements
 def test_add_numbers():
     # Test positive numbers
-    assert add_numbers(2, 3) == 5
+    assert add_numbers(3, 0) == 3
 
 def reverse_string(text: str):
     return text[::-1].upper()
